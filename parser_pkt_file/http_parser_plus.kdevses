@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KDevPrjSession>
+<KDevPrjSession>
+ <DocsAndViews NumberOfDocuments="4" >
+  <Doc0 NumberOfViews="1" URL="file:/home/zhangjl/http_parser_plus/src/pkt_processor.cpp" >
+   <View0 line="395" Type="Source" />
+  </Doc0>
+  <Doc1 NumberOfViews="1" URL="file:/home/zhangjl/http_parser_plus/src/tcp_reassemble.cpp" >
+   <View0 line="77" Type="Source" />
+  </Doc1>
+  <Doc2 NumberOfViews="1" URL="file:/home/zhangjl/http_parser_plus/src/tcp_reassemble.h" >
+   <View0 line="53" Type="Source" />
+  </Doc2>
+  <Doc3 NumberOfViews="1" URL="file:/home/zhangjl/http_parser_plus/src/http_reassemble.cpp" >
+   <View0 line="422" Type="Source" />
+  </Doc3>
+ </DocsAndViews>
+ <pluginList>
+  <kdevbookmarks>
+   <bookmarks/>
+  </kdevbookmarks>
+  <kdevvalgrind>
+   <executable path="" params="" />
+   <valgrind path="" params="" />
+   <calltree path="" params="" />
+   <kcachegrind path="" />
+  </kdevvalgrind>
+  <kdevdebugger>
+   <breakpointList/>
+  </kdevdebugger>
+ </pluginList>
+</KDevPrjSession>
