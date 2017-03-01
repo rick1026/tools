@@ -1,0 +1,8 @@
+#!/bin/bash
+
+MessageNo=1000001
+while read line 
+do
+echo "insert into tbl_ISMS_policy_rule_info(MessageNo,Rule_SubType,Rule_dip_start, Rule_dip_end)values($MessageNo,5,$line, $line);" >> 2.sql
+((MessageNo++))
+done</home/wangy/dip.txt 

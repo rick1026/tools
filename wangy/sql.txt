@@ -1,0 +1,2 @@
+insert into tbl_ISMS_policy_info(MessageNo,Type,Rule_Num,Log_Flag,level,Bind_Status)values(20006,6,1,1,0,1);
+insert into tbl_ISMS_policy_rule_info(MessageNo,Rule_SubType,Rule_dip_start, Rule_dip_end)values(20006,5,3232236297, 3232236297);

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+MessageNo=3000001
+for((i=0; i<16792;i++))
+do
+echo "insert into tbl_ISMS_policy_info(MessageNo,Type,Rule_Num,Log_Flag,level,Bind_Status)values($MessageNo,1,2,1,0,1);">>url_policy.sql
+((MessageNo++))
+done
+

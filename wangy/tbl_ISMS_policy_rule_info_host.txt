@@ -1,0 +1,8 @@
+#!/bin/bash
+
+MessageNo=2011361
+while read line 
+do
+echo "insert into tbl_ISMS_policy_rule_info(MessageNo,Rule_SubType,Rule_Host)values($MessageNo,1,'"$line"');" >> host_rule.sql
+((MessageNo++))
+done</home/zhangjl/policy_url/only_host.txt
