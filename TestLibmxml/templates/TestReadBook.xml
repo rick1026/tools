@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<bookstore>
+	<name>xianzonglin</name>
+	<book category="CHILDREN">
+		<title>Harry&nbsp;Potter</title>
+		<author>J&nbsp;K.&nbsp;Rowling</author>
+		<year>2005</year>
+		<price>29.99</price>
+		<publisher>
+			<name>ErTong&nbsp;Publisher</name>
+			<addr>BeiJingChaoyang</addr>
+		</publisher>
+	</book>
+	<book category="WEB">
+		<title>Learning&nbsp;XML</title>
+		<author>Erick T. Ray</author>
+		<year>2008</year>
+		<price>39.95</price>
+		<publisher>
+			<name>YouDian&nbsp;Publisher</name>
+			<addr>BeijingHaidian</addr>
+		</publisher>
+	</book>
+	<book category="PICTURE">
+		<title>The history of FanGao</title>
+		<author>zhangjialin</author>
+		<year>2008</year>
+		<price>39.95</price>
+		<publisher>
+			<name>Senior&nbsp;Publisher</name>
+			<addr>BeijingHaidian</addr>
+		</publisher>
+	</book>
+</bookstore>
+<bookstore>
+	<name>fanyizhan</name>
+	<book category="LANGUAGE">
+		<title>Homores</title>
+		<author>David</author>
+		<year>2015</year>
+		<price>59.98</price>
+	</book>
+	<book category="DIRECTORY">
+		<title>XinHua Dictionary</title>
+		<author>Guomoruo</author>
+		<year>1995</year>
+		<price>45.95</price>
+	</book>
+</bookstore>
