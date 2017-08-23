@@ -63,6 +63,15 @@ int strsplit(char *string, int stringlen, char **tokens, int maxtokens, char del
 			string[i] = '\0';
 			tokstart = 1;
 		}
+
+#if 1
+		// 当分隔符在末尾时，此段代码会生成一个新的空字段，如a:b:会被分隔为3个字段
+        	if (tokstart && (i == (stringlen - 1)))
+        	{
+            		tokens[tok++] = &string[i];
+            		string[i] = '\0';
+        	}
+#endif
 	}
 	return tok;
 }
