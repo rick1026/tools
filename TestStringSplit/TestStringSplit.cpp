@@ -15,6 +15,7 @@ int main(int argc, char **argv)
 	char origin_string[] = "abcd:12345:ABCD:hh:jj:kk:mm:nn:pp:dd:rr:ss:gg:ff:xx:yy:zz";
 
 	char *rslt[16];
+	printf("string: [%s]\n", origin_string);
 	int num = strsplit(origin_string, strlen(origin_string), rslt, 8, ':');
 
 	int i = 0;
@@ -22,6 +23,16 @@ int main(int argc, char **argv)
 	{
 		printf("rslt[%d] = %s\n", i, rslt[i]);
 	}
+
+	char origin_string2[] = ":1111:2222::4444:5555:";
+	char *rslt2[8];
+	printf("string2: [%s]\n", origin_string2);
+	num = strsplit(origin_string2, strlen(origin_string2), rslt2, 8, ':');
+	for (i = 0; i < num; i++)
+	{
+		printf("rslt2[%d] = %s\n", i, rslt2[i]);
+	}
+
 	return 0;
 }
 
@@ -65,12 +76,11 @@ int strsplit(char *string, int stringlen, char **tokens, int maxtokens, char del
 		}
 
 #if 1
-		// 当分隔符在末尾时，此段代码会生成一个新的空字段，如a:b:会被分隔为3个字段
-        	if (tokstart && (i == (stringlen - 1)))
-        	{
-            		tokens[tok++] = &string[i];
-            		string[i] = '\0';
-        	}
+		if (tokstart && (i == (stringlen - 1)))
+		{
+			tokens[tok++] = &string[i];
+			string[i] = '\0';
+		}
 #endif
 	}
 	return tok;
